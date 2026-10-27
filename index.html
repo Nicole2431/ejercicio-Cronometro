@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actividad Cronómetros</title>
+  
+  <!-- Fuente digital Orbitron -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <main class="container">
+    
+    <!-- ==================== PUNTO 1 ==================== -->
+    <section class="section-block">
+      <h1 class="title">Punto 1: Cronómetros Enlazados</h1>
+
+      <div class="control-panel">
+        <div class="input-group">
+          <label for="input-time">Tiempo por cronómetro (seg.):</label>
+          <input type="number" id="input-time" min="1" value="7" placeholder="Ej. 7">
+        </div>
+        <button id="btn-play-1" class="btn-neon">▶ Iniciar Punto 1</button>
+      </div>
+
+      <div class="timers-wrapper">
+        <article class="timer-card" id="timer-1">
+          <h2>Cronómetro 1</h2>
+          <div class="time-display">00:00</div>
+          <div class="status-badge status-paused">En Pausa</div>
+        </article>
+
+        <article class="timer-card" id="timer-2">
+          <h2>Cronómetro 2</h2>
+          <div class="time-display">00:00</div>
+          <div class="status-badge status-paused">En Pausa</div>
+        </article>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ==================== PUNTO 2 ==================== -->
+    <section class="section-block">
+      <h1 class="title">Punto 2: Tres Cronómetros</h1>
+      <p class="subtitle">Tiempos: 00:55, 02:25 y 00:25</p>
+
+      <div class="control-panel">
+        <button id="btn-play-2" class="btn-neon">▶ Iniciar Los Tres</button>
+      </div>
+
+      <div class="timers-wrapper">
+        <!-- Cronómetro A (55 seg) -->
+        <article class="timer-card" id="timer-a">
+          <h2>Tiempo. 00:55</h2>
+          <div class="time-display">00:00</div>
+          <div class="status-badge status-paused">En Pausa</div>
+        </article>
+
+        <!-- Cronómetro B (2 min 25 seg = 145 seg) -->
+        <article class="timer-card" id="timer-b">
+          <h2>Tiempo. 02:25</h2>
+          <div class="time-display">00:00</div>
+          <div class="status-badge status-paused">En Pausa</div>
+        </article>
+
+        <!-- Cronómetro C (25 seg) -->
+        <article class="timer-card" id="timer-c">
+          <h2>Tiempo. 00:25</h2>
+          <div class="time-display">00:00</div>
+          <div class="status-badge status-paused">En Pausa</div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="cronometro.js"></script>
+</body>
+</html>
